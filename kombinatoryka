@@ -1,0 +1,37 @@
+item1=input("What do you want to buy? ")
+item11=len(item1)
+item2=input("What do you want to buy? ")
+item22=len(item2)
+item3=input("What do you want to buy? ")
+item33=len(item3)
+item4=input("What do you want to buy? ")
+item44=len(item4)
+item5=input("What do you want to buy? ")
+item55=len(item5)
+item6=input("What do you want to buy? ")
+item66=len(item6)
+list=[item1,item2,item3,item4,item5,item6,""]
+if item11<=10 or item22<=10 or item33<=10 or item44<=10 or item55<=10 or item66<=10:
+    a=b=c=d=e=f=list[6]
+    i=0
+    if item11<=10:
+        a=list[0]+", "
+        i+=1
+    if item22<=10:
+        b=list[1]+", "
+        i+=1
+    if item33<=10:
+        c=list[2]+", "
+        i+=1
+    if item44<=10:
+        d=list[3]+", "
+        i+=1
+    if item55<=10:
+        e=list[4]+", "
+        i+=1
+    if item66<=10:
+        f=list[5]+", "
+        i+=1
+    print(str(i),f"z tych nazw ma mniej bądz 10 znaków! Dokładnie: {a}{b}{c}{d}{e}{f}.")
+else:
+    print("Wszystkie nazwy mają powyżej 10 znków!")
